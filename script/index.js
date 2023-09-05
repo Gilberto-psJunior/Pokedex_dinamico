@@ -22,5 +22,5 @@ const renderPokemon = async (pokemon) => {
   console.log(data)
 };
 
-renderPokemon('28')
+renderPokemon('1')
 
