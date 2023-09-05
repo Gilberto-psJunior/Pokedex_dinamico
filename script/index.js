@@ -5,34 +5,37 @@ const pokemonType=document.querySelector(".pokemon__type");
 const form=document.querySelector(".form");
 const input=document.querySelector(".input__search");
 const fetchPokemon = async (pokemon) => {
+  try {
   const Response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`);
+    `https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
   const data = await Response.json();
   return data;
+  } catch(err) {
+    console.log(err.response.data);
+  }
   
 };
 
 
 const renderPokemon = async (pokemon) => {
-  const data = await fetchPokemon(pokemon);
-  pokemonName.innerHTML = data.name;
-  pokemonNumber.innerHTML = `#${data.id}`;
+      const data = await fetchPokemon(pokemon);
+      pokemonName.innerHTML = data.species.name;
+      pokemonNumber.innerHTML = `#${data.id}`;
+      
+      
+      PokemonImg.src=data['sprites']['versions']['generation-v'] ['black-white'] ['animated']['front_default']
+      
+      pokemonType.innerHTML=`Type: ${data['types']['0']['type']['name']}`
   
-  
-  PokemonImg.src=data['sprites']['versions']['generation-v'] ['black-white'] ['animated']['front_default']
-  
-  pokemonType.innerHTML=`Type: ${data['types']['0']['type']['name']}`
-
-  //adicionando a busca por nome ou numero da api
-  form.addEventListener('submit',async (event)=>{
-    event.preventDefault();
-    renderPokemon(input.value);
-    input.value='';
-  });
-  
-  
-  console.log(data)
+      //adicionando a busca por nome ou numero da api
+      form.addEventListener('submit',async (event)=>{
+      event.preventDefault();
+      renderPokemon(input.value);
+      input.value='';
+      });
+      
+      
+      console.log(data)
 };
 
 renderPokemon('25')
-
