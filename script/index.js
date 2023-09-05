@@ -12,8 +12,9 @@ const fetchPokemon = async (pokemon) => {
 };
 const renderPokemon = async (pokemon) => {
   const data = await fetchPokemon(pokemon);
-  pokemonName.innerHTML = data.id;
   pokemonName.innerHTML = data.name;
+  pokemonNumber.innerHTML = `#${data.id}`;
+  
   
   PokemonImg.src=data['sprites']['versions']['generation-v'] ['black-white'] ['animated']['front_default']
   
@@ -21,5 +22,5 @@ const renderPokemon = async (pokemon) => {
   console.log(data)
 };
 
-renderPokemon('3')
+renderPokemon('28')
 
