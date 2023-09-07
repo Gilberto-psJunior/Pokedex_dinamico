@@ -30,9 +30,11 @@ const renderPokemon = async (pokemon) => {
     ];
    
   pokemonType.innerHTML = `Type:<span> ${data["types"]["0"]["type"]["name"]}</span>`;
+  
+ // <!-- adicionando cores aos tipos -->
   switch ((data["types"]["0"]["type"]["name"])) {
     case "grass":
-      pokemonType.innerHTML = `Type:<span style="color: green;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+      pokemonType.innerHTML = `Type:<span style="color: #1ddd33;"> ${data["types"]["0"]["type"]["name"]}</span>`;
       break;
   case "water":
     pokemonType.innerHTML = `Type:<span style="color: blue;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
@@ -40,6 +42,51 @@ const renderPokemon = async (pokemon) => {
   case "fire":
     pokemonType.innerHTML = `Type:<span style="color: red;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
   break;
+  case "normal":
+    pokemonType.innerHTML = `Type:<span style="color: #cb97a7;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+    break;
+case "bug":
+  pokemonType.innerHTML = `Type:<span style="color: green;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "dark":
+  pokemonType.innerHTML = `Type:<span style="color: #000000;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "fairy":
+  pokemonType.innerHTML = `Type:<span style="color: #951a44 ;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+  break;
+case "electric":
+pokemonType.innerHTML = `Type:<span style="color:#e3e31b;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "ground":
+pokemonType.innerHTML = `Type:<span style="color: #a9702c;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "ice":
+pokemonType.innerHTML = `Type:<span style="color: #86d2f5;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+break;
+case "poison":
+pokemonType.innerHTML = `Type:<span style="color: #5e2d88;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "dragon":
+pokemonType.innerHTML = `Type:<span style="color: #458a95;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "ghost":
+  pokemonType.innerHTML = `Type:<span style="color: #333368;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+  break;
+case "steel":
+pokemonType.innerHTML = `Type:<span style="color:#5a5979;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "rock":
+pokemonType.innerHTML = `Type:<span style="color: #8b3e21;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "fighting":
+pokemonType.innerHTML = `Type:<span style="color:#994023;"> ${data["types"]["0"]["type"]["name"]}</span>`;
+break;
+case "flying":
+pokemonType.innerHTML = `Type:<span style="color: #4a677d;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
+case "psychic":
+pokemonType.innerHTML = `Type:<span style="color: #f81c91;"> ${data["types"]["0"]["type"]["name"]}</span>`;  
+break;
     default:
       break;
   }

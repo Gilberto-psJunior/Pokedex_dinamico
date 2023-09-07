@@ -38,8 +38,9 @@ main {
   font-weight: 600;
   color: #aaa;
   top: 54.5%;
-  right: 23%;
+  right: 24%;
   font-size: clamp(8px, 5vw, 16px);
+  
 }
 .pokemon__id {
   position: absolute;
