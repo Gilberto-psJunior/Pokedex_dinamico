@@ -56,7 +56,9 @@ main {
   text-transform: capitalize;
  font-size: 13px;
 }
-
+.grass{
+  color: #1ddd33;
+}
 .pokemon__name {
   color: #21252a;
   text-transform: capitalize;
@@ -68,7 +70,11 @@ main {
   top: 65%;
   left: 13.5%;
 }
-
+.icon {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+}
 .input__search {
   width: 100%;
   padding: 4%;
@@ -89,6 +95,7 @@ main {
   transform: translate(-57%, 0);
   display: flex;
   gap: 20px;
+  font-family: 'Super Legend Boy', sans-serif;
 }
 
 .button {
@@ -100,6 +107,7 @@ main {
   font-weight: 600;
   color: white;
   background-color: #444;
+  font-family: 'Super Legend Boy', sans-serif;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 

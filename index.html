@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Links -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
+
+  <link rel="icon" href="imgs/pokemon-go.png">
   <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Main JS -->
+
   <script defer src="script/index.js"></script>
+  <script src="script/types.js"></script>
 
   <title>Pokédex</title>
 </head>
@@ -18,7 +19,7 @@
 <body>
 
   <main>
-    <img src="" on alt="pokemon" class="pokemon__image">
+    <img   src="https://i.imgur.com/kxd89UN.gif" on alt="pokemon" class="pokemon__image">
     <h1 class="pokemon__id">
       <span class="pokemon__number">sdasd</span>
     </h1>
@@ -31,21 +32,32 @@
     </h1>
 
     <form class="form">
-      <input type="search" class="input__search" placeholder="Name or Number" required />
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pokeball" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="9" cy="9" r="9" transform="translate(3 4)" />
+        <circle cx="12" cy="12" r="3" />
+        <path d="M3 12h6m6 0h6" />
+      </svg>
+      <input type="search" class="input__search" placeholder=" Name or Id
+      " required />
     </form>
 
     <div class="buttons">
       <button class="button btn-prev">Prev &lt;</button>
-      <button  class="button btn-next">Next &gt;</button>
+      <button class="button btn-next">Next &gt;</button>
     </div>
 
     <img src="imgs/pokedex.png" alt="pokedex" class="pokedex">
   </main>
-<footer>
-  made with <a target="_blank" href="https://pokeapi.co/">https://pokeapi.co/api/v2/pokemon</a>
- <br><br>
- Developed by <a href="https://www.linkedin.com/in/gilberto-juniorsantos/">Gilberto P.S. Júnior</a>
-</footer>
+  <footer>
+    <br> 
+    made with <a target="_blank" href="https://pokeapi.co/">https://pokeapi.co/api/v2/pokemon</a>
+    <br><br>
+    Developed by <a href="https://www.linkedin.com/in/gilberto-juniorsantos/">Gilberto P.S. Júnior</a>
+  </footer>
 </body>
 <a href=""></a>
+
 </html>
