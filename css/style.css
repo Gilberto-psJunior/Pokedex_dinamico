@@ -8,13 +8,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "super";
+  
 }
 
 body {
   text-align: center;
   background: linear-gradient(to bottom, #6ab7f5, #fff);
   min-height: 100vh;
+  font-family: "super";
 }
 
 main {
@@ -110,4 +111,12 @@ main {
 .button:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
+}
+footer{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+footer a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, ;
+  text-decoration: none;
 }
