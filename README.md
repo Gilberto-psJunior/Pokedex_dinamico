@@ -29,6 +29,7 @@ Consome dados em tempo real da [PokéAPI](https://pokeapi.co/) e exibe cards com
 ✅ Exibição dinâmica de vários Pokémon  
 ✅ Interface responsiva com CSS puro  
 ✅ Imagens, nomes, tipos e outros dados básicos  
+✅ Pesquisa por nomes ou numeros da pokedex
 
 ---
 
