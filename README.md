@@ -19,7 +19,7 @@ Consome dados em tempo real da [PokéAPI](https://pokeapi.co/) e exibe cards com
 
 > 🎮 Tela com cards dos Pokémon carregados da API
 
-![Preview da Pokédex](./img/pokedex-preview.jpg)
+![Preview da Pokédex](./img/pokedex-preview.png)
 
 ---
 
